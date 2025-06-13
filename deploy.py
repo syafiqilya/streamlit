@@ -43,7 +43,7 @@ def process_video(input_path, output_path, model):
     out.release()
 
 def main():
-    st.title("YOLOv11 Object Detection")
+    st.title("YOLOv11 Galon Detection")
     st.write("This app uses a pre-configured model to detect objects in an uploaded video.")
 
     model_path = "best.pt"
@@ -102,7 +102,7 @@ def main():
                 st.download_button(
                     label="Download Processed Video",
                     data=video_bytes,
-                    file_name="video_with_detections.mp4",
+                    file_name="video_with_galon_detections.mp4",
                     mime="video/mp4"
                 )
             else:
