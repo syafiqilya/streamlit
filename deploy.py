@@ -46,7 +46,7 @@ def main():
     st.title("YOLOv11 Object Detection")
     st.write("This app uses a pre-configured model to detect objects in an uploaded video.")
 
-    model_path = "/home/syafiqilya/Documents/CODE/python/deploy/best.pt"
+    model_path = "best.pt"
     # ... (model loading code remains the same) ...
     if not os.path.exists(model_path):
         st.error(f"Error: The model file was not found at the path: {model_path}")
